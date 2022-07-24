@@ -5,7 +5,7 @@ module AuthorizationModule
     railtie_name :"authorization_module"
 
     rake_tasks do
-      load "authorization_gem/tasks/authorization_module_tasks.rake"
+      load "authorization_module/tasks/authorization_module.rake"
     end
   end
 end

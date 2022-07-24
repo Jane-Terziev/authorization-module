@@ -19,7 +19,7 @@ And then execute:
 Or install it yourself as:
 
     $ gem install authorization_modul
-    $ rake authorization_module:setupe
+    $ rake authorization_module:setup
 
 The rake task will create all the migration files needed for the module to work and will generate a configuration file
 ## Usage
