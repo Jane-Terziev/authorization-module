@@ -7,7 +7,7 @@ AuthorizationModule::Config::AuthorizationConfiguration.configuration do |config
   config.role_grant_repository = AuthorizationModule::Models
   config.user_group_repository = AuthorizationModule::Models
   config.current_user_repository =
-      config.attribute_provider_factory = attribute_provider_factory
+  # TODO: config.current_user_repository =
   config.policy_enforcer = AuthorizationModule::PolicyEnforcer.new(attribute_provider_factory: attribute_provider_factory)
   config.model_inheritance = ::ActiveRecord::Base
 end
