@@ -17,6 +17,16 @@ module AuthorizationModule
 
       attr_accessor :access_token
 
+      def self.create_new(id: SecureRandom.uuid, group_id:, role: nil)
+        identity = new(
+            id: id,
+            group_id: group_id
+        )
+
+        identity.assign_role(role)
+        identity
+      end
+
       def assign_role(role)
         return unless role
         return if has_role?(role.name)
