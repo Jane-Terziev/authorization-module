@@ -20,6 +20,7 @@ require 'authorization_module/models/abac/condition'
 require 'authorization_module/railtie' if defined?(Rails)
 require 'authorization_module/policy_enforcer'
 require 'authorization_module/authorization_service'
+require 'authorization_module/identity_service'
 
 module AuthorizationModule
 end
